@@ -1,15 +1,23 @@
 <html>
 <head>
-    <title>Cart Page</title>
+    <title>Catalogue Page</title>
     <link rel="icon" type="image/jpeg" href="c:\Users\arjun\Desktop\College\FSDWD\puppy-9341920_1280.jpeg">
     <style>
         table {
-            width: 60%;
+            width: 40%;
+            height:50%;
             border-collapse: collapse;
+            border: 1px solid black;
         }
         td {
             padding: 8px;
             text-align: center;
+        }
+        tr:first-child td {
+            border: 1px solid black;
+        }
+        td:first-child {
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -17,7 +25,7 @@
     <table>
         <tr>
             <td colspan="2">
-                <img src="c:\Users\arjun\Desktop\College\FSDWD\puppy-9341920_1280.jpeg" alt="Logo" width="60" height="60">
+                <img src="8cb67bc5-8add-40aa-aa65-458cf2cbf62a.png" alt="Logo" width="60" height="60">
             </td>
             <td colspan="4">Web Site Name</td>
         </tr>
@@ -26,38 +34,33 @@
             <td>Login</td>
             <td>Registration</td>
             <td>Catalogue</td>
-            <td>Cart</td>
-            <td></td>
+            <td colspan="2">Cart</td>
         </tr>
         <tr>
             <td>CSE</td>
-            <td><b>Book Name</b></td>
-            <td><b>Price</b></td>
-            <td><b>Quantity</b></td>
-            <td><b>Amount</b></td>
-            <td></td>
+            <td>Book name</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td colspan="2">Amount</td>
         </tr>
         <tr>
             <td>ECE</td>
             <td>Java 2</td>
             <td>$35.5</td>
             <td>2</td>
-            <td>$70</td>
-            <td></td>
+            <td colspan="2">$70</td>
         </tr>
         <tr>
             <td>EEE</td>
-            <td>XML Bible</td>
+            <td>XML bible</td>
             <td>$40.5</td>
             <td>1</td>
-            <td>$40.5</td>
-            <td></td>
+            <td colspan="2">$40.5</td>
         </tr>
         <tr>
             <td>CIVIL</td>
-            <td colspan="3"><b>Total Amount</b></td>
-            <td>$110.5</td>
-            <td></td>
+            <td colspan="3">Total amount</td>
+            <td colspan="2">- $130.5</td>
         </tr>
     </table>
 </body>
