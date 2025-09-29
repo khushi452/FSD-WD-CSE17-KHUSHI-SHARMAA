@@ -1,7 +1,4 @@
 
-p {
-    color: aqua;
-}
 *{
     background-color: pink;
     font-size: 30px;
@@ -13,5 +10,5 @@ p {
     color: green;
 }
 #paragraph3 {
-    color: rgb(255, 0, 242);
+    color: rgb(255, 0, 0);
 }
