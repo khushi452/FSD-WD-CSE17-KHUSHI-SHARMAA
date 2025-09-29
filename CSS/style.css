@@ -4,5 +4,14 @@ p {
 }
 *{
     background-color: pink;
-    font-size: 60px;
+    font-size: 30px;
+}
+#paragraph1 {
+    color: magenta;
+}
+#paragraph2 {
+    color: green;
+}
+#paragraph3 {
+    color: rgb(255, 0, 242);
 }
