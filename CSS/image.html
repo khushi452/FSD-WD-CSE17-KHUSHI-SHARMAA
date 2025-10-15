@@ -50,8 +50,44 @@
         .saturate {filter: saturate(7);}
         .sepia {filter: sepia(100%);}
         .shadow {filter: drop-shadow(8px 8px 10px green);}
-
-    
+    #img7{
+        .container {
+            position: relative;
+            width: 50%;
+        }
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008cba;
+        }
+        .container:hover .overlay {
+            bottom: 0;
+            height: 100%;
+        }
+        .text {
+             white-space: nowrap; 
+             color: white;
+             font-size: 20px;
+             position: absolute;
+             overflow: hidden;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             -ms-transform: translate(-50%, -50%);
+            }
+    }
 
     </style>
 </head>
@@ -84,6 +120,7 @@
     <img id="img6" class="saturate" src="yona.jpg" alt="yona" width="300" height="300">
     <img id="img6" class="sepia" src="yona.jpg" alt="yona" width="300" height="300">
     <img id="img6" class="shadow" src="yona.jpg" alt="yona" width="300" height="300">
+
 
 
 
