@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f3e7e9, #e3eeff);
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    background-color: white;
+    transition: transform 0.4s ease;
+}
+
+table:hover {
+    transform: scale(1.2);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    transition: color 1s ease;
+}
+
+td a {
+    color: blue;
+    transition: color 1s ease;
+}
+
+td a:hover {
+    color: red;
+}
+
+th:hover, td:hover {
+    color: red;
+}
+
+img {
+    margin-top: 10px;
+}
