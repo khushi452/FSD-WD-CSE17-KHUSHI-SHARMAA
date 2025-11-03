@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f8f9fa;
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    /* About Section */
+    #about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      padding: 80px 20px;
+    }
+
+    #about img {
+      width: 300px;
+      height: auto;
+      margin: 20px;
+      transition: transform 0.5s;
+      border-radius: 10px;
+    }
+
+    #about img:hover {
+      transform: rotate(45deg);
+    }
+
+    #about .text {
+      max-width: 500px;
+      text-align: left;
+      margin: 20px;
+    }
+
+    #about .text h2 {
+      color: #003366;
+    }
+
+    /* Department Section */
+    #department {
+      background-color: #e8efff;
+    }
+
+    #department h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .dept-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .dept {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 220px;
+      transition: transform 0.3s;
+    }
+
+    .dept:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #003366;
+      color: white;
+    }
+
+    #contact h2 {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #002244;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#department">Department</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <img src="https://via.placeholder.com/300x200.png?text=College+Image" alt="College Image">
+    <div class="text">
+      <h2>About Our College</h2>
+      <p>
+        Welcome to ABC College — a place of excellence, innovation, and learning. 
+        We nurture young minds with modern education, skill-based programs, and 
+        holistic growth opportunities.
+      </p>
+    </div>
+  </section>
+
+  <section id="department">
+    <h2>Our Departments</h2>
+    <div class="dept-list">
+      <div class="dept">
+        <h3>Computer Science</h3>
+        <p>Cutting-edge programs in AI, software, and data science.</p>
+      </div>
+      <div class="dept">
+        <h3>Electronics</h3>
+        <p>Innovative research and design in circuits and embedded systems.</p>
+      </div>
+      <div class="dept">
+        <h3>Mechanical</h3>
+        <p>Hands-on learning and real-world engineering applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@abccollege.edu</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: 123 Knowledge Road, New Delhi, India</p>
+  </section>
+
+  <footer>
+    &copy; 2025 ABC College. All rights reserved.
+  </footer>
+
+</body>
+</html>
