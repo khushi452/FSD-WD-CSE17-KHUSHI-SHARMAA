@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>College Website</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
       scroll-behavior: smooth;
-      background-color: #f8f9fa;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
     /* Header */
     header {
-      background-color: #003366;
+      background-color: #222;
       color: white;
       padding: 15px 0;
       text-align: center;
@@ -32,54 +38,71 @@
     }
 
     nav a:hover {
-      color: #ffd700;
+      color: #ffcc00;
     }
 
+    /* Landing Page */
+    #landing {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      background-color: #fff;
+    }
+
+    #landing img {
+      width: 350px;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    #landing .text {
+      max-width: 450px;
+      margin: 20px;
+      transition: transform 0.6s;
+    }
+
+    #landing .text:hover {
+      transform: rotate(45deg);
+    }
+
+    #landing .text h1 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    #landing .text p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* About Section */
     section {
       padding: 60px 20px;
       text-align: center;
     }
 
-    /* About Section */
     #about {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      background-color: #ffffff;
-      padding: 80px 20px;
+      background-color: #fefefe;
     }
 
-    #about img {
-      width: 300px;
-      height: auto;
-      margin: 20px;
-      transition: transform 0.5s;
-      border-radius: 10px;
-    }
-
-    #about img:hover {
-      transform: rotate(45deg);
-    }
-
-    #about .text {
-      max-width: 500px;
-      text-align: left;
-      margin: 20px;
-    }
-
-    #about .text h2 {
-      color: #003366;
+    #about h2 {
+      margin-bottom: 20px;
+      font-size: 1.8em;
     }
 
     /* Department Section */
     #department {
-      background-color: #e8efff;
+      background-color: #e9e9e9;
     }
 
     #department h2 {
-      color: #003366;
       margin-bottom: 20px;
+      font-size: 1.8em;
     }
 
     .dept-list {
@@ -87,10 +110,11 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 30px;
+      margin-top: 20px;
     }
 
     .dept {
-      background-color: #fff;
+      background-color: white;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       padding: 20px;
@@ -104,7 +128,7 @@
 
     /* Contact Section */
     #contact {
-      background-color: #003366;
+      background-color: #222;
       color: white;
     }
 
@@ -113,7 +137,7 @@
     }
 
     footer {
-      background-color: #002244;
+      background-color: #111;
       color: #ccc;
       text-align: center;
       padding: 15px 0;
@@ -131,32 +155,37 @@
     </nav>
   </header>
 
-  <section id="about">
-    <img src="https://via.placeholder.com/300x200.png?text=College+Image" alt="College Image">
+  <section id="landing">
+    <img src="https://via.placeholder.com/350x250.png?text=College+Building" alt="College Image">
     <div class="text">
-      <h2>About Our College</h2>
-      <p>
-        Welcome to ABC College — a place of excellence, innovation, and learning. 
-        We nurture young minds with modern education, skill-based programs, and 
-        holistic growth opportunities.
-      </p>
+      <h1>Welcome to ABC College</h1>
+      <p>We believe in shaping minds and inspiring dreams. 
+      Our college provides an environment that fosters innovation, creativity, 
+      and personal growth for every student.</p>
     </div>
   </section>
 
+  <section id="about">
+    <h2>About Us</h2>
+    <p>ABC College is a premier institution offering top-tier education and skill-based programs. 
+       With experienced faculty and a strong focus on holistic development, 
+       we prepare students for global challenges.</p>
+  </section>
+
   <section id="department">
-    <h2>Our Departments</h2>
+    <h2>Departments</h2>
     <div class="dept-list">
       <div class="dept">
         <h3>Computer Science</h3>
-        <p>Cutting-edge programs in AI, software, and data science.</p>
+        <p>AI, software, and data-driven innovation.</p>
       </div>
       <div class="dept">
         <h3>Electronics</h3>
-        <p>Innovative research and design in circuits and embedded systems.</p>
+        <p>Research and design in circuits and systems.</p>
       </div>
       <div class="dept">
         <h3>Mechanical</h3>
-        <p>Hands-on learning and real-world engineering applications.</p>
+        <p>Real-world engineering applications and design.</p>
       </div>
     </div>
   </section>
