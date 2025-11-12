@@ -3,81 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bookstore Registration</title>
     <link rel="icon" href="BOOKSTORE.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf5;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+        th {
+            background-color: #f9e1d1;
+        }
+        th[colspan="4"] {
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        button {
+            padding: 6px 12px;
+            background-color: orange;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e69500;
+        }
+    </style>
 </head>
+
 <body>
-    <div style="text-align: justify;"> <b> Experiment 7 </b> </div>
+    <div style="text-align: justify;"><b>Experiment 7</b></div>
 
     <main>
-        <form id="myform" action="#" method="post" enctype="multipart/form-data">
-            <table border="1">
+        <form id="myform" method="post">
+            <table>
                 <tr>
-                    <th><img src="BOOKSTORE.jpg" width="60" height="30" alt=""></th>
-                    <th bgcolor="orange" colspan="4">WEB SITE NAME</th>
+                    <th><img src="C:\Users\arjun\Desktop\College\FSDWD\BOOKSTORE.jpg" width="60" height="30" alt=""></th>
+                    <th colspan="4">WEB SITE NAME</th>
                 </tr>
                 <tr>
-                    <th bgcolor="#f9e1d1">HOME</th>
-                    <th bgcolor="#f9e1d1"><a href="exp2login.html" target="_main">LOGIN</a></th>
-                    <th bgcolor="#f9e1d1"><a href="EXP5.html" target="_main">REGISTRATION</a></th>
-                    <th bgcolor="#f9e1d1"><a href="exp3catalogue.html" target="_main">CATALOGUE</a></th>
-                    <th bgcolor="#f9e1d1"><a href="exp4cart.html" target="_main">CART</a></th>
+                    <th>HOME</th>
+                    <th><a href="exp2login.html" target="_blank">LOGIN</a></th>
+                    <th><a href="EXP5.html" target="_blank">REGISTRATION</a></th>
+                    <th><a href="exp3catalogue.html" target="_blank">CATALOGUE</a></th>
+                    <th><a href="exp4cart.html" target="_blank">CART</a></th>
                 </tr>
                 <tr>
-                    <td rowspan="4">
-                        CSE <br><br><br><br>
-                        ECE <br><br><br><br>
-                        EEE <br><br><br><br>
-                        CIVIL <br><br><br><br>
+                    <td rowspan="4" style="vertical-align: top;">
+                        CSE <br><br>
+                        ECE <br><br>
+                        EEE <br><br>
+                        CIVIL
                     </td>
-                    <td rowspan="4" colspan="4" align="left">
-                        <div style="text-align: center;"><br>
+                    <td colspan="4">
+                        <div style="text-align: center;">
                             <b><u>Registration Page</u></b>
-                        </div><br>
+                        </div>
+                        <br>
+                        Name: 
+                        <input type="text" name="fname" placeholder="First name" size="8" required>
+                        <input type="text" name="lname" placeholder="Last name" size="8" required>
+                        <br><br>
 
-                        Name:
-                        <input id="fname" type="text" name="fname" placeholder="First name" size="8" required>
-                        <input id="lname" type="text" name="lname" placeholder="Last name" size="8" required><br><br>
+                        Password: 
+                        <input id="password" type="password" name="password" required>
+                        <br><br>
 
-                        Password:
-                        <input id="password" type="password" name="password" required><br><br>
+                        Email: 
+                        <input id="email" type="email" name="email" required>
+                        <span id="email-error" style="color:red;"></span>
+                        <br><br>
 
-                        Email:
-                        <input id="email" type="email" name="email" required><br>
-                        <span id="email-error" style="color:red;"></span><br><br>
-
-                        PHONE NO.:
+                        PHONE NO.: 
                         <input type="text" name="country-code" value="+91" readonly size="1">
-                        <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required><br>
-                        <span id="phone-error" style="color:red;"></span><br><br>
+                        <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        <span id="phone-error" style="color:red;"></span>
+                        <br><br>
 
-                        Sex:
+                        Sex: 
                         <input type="radio" name="sex" value="Female"> Female
-                        <input type="radio" name="sex" value="Male"> Male <br><br>
+                        <input type="radio" name="sex" value="Male"> Male
+                        <br><br>
 
                         Date Of Birth:
                         <input type="number" name="date" placeholder="DD" min="1" max="31" required>
                         <input type="number" name="month" placeholder="MM" min="1" max="12" required>
-                        <input type="number" name="year" placeholder="YYYY" min="1900" max="2025" required> <br><br>
+                        <input type="number" name="year" placeholder="YYYY" min="1900" max="2025" required>
+                        <br><br>
 
                         How many languages do you know?<br>
                         <input type="checkbox" name="lang" value="English"> English
                         <input type="checkbox" name="lang" value="Hindi"> Hindi
                         <input type="checkbox" name="lang" value="Telugu"> Telugu
-                        <input type="checkbox" name="lang" value="Tamil"> Tamil <br><br>
+                        <input type="checkbox" name="lang" value="Tamil"> Tamil
+                        <br><br>
 
-                        Address:
+                        Address: 
                         <input type="text" name="flat" placeholder="Flat No" size="3" required>
                         <input type="text" name="locality" placeholder="Locality" size="10" required>
                         <input type="text" name="city" placeholder="City" size="8" required>
                         <input type="text" name="district" placeholder="District" size="8" required>
-                        <input type="number" name="pincode" placeholder="Pin-code" size="8" required><br><br>
+                        <input type="number" name="pincode" placeholder="Pin-code" size="8" required>
+                        <br><br>
 
                         <div style="text-align: center; margin-top: 5px;">
                             <button type="submit">Submit</button> &emsp;
                             <button type="reset">Refresh</button>
                         </div>
-                        <br>
                     </td>
                 </tr>
             </table>
@@ -85,8 +132,8 @@
 
         <script>
             document.getElementById("myform").addEventListener("submit", function(event) {
-                let email = document.getElementById("email").value;
-                let phone = document.getElementById("phone").value;
+                let email = document.getElementById("email").value.trim();
+                let phone = document.getElementById("phone").value.trim();
                 let emailErr = document.getElementById("email-error");
                 let phoneErr = document.getElementById("phone-error");
 
